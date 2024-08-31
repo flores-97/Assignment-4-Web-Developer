@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="media/image1.jpg">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_self">Home</a></li>
+                <li><a href="media.html" target="_self">Media</a></li>
+                <li></li>
+                <li><a href="forms.html" target="_self">Submission Application</a></li>
+                <li><a href="contact.html" target="_self">Contact Us</a></li>
+            </ul>
+        </nav>
+        <h1>Application</h1>
+    </header>
+    
+    <main>
+        <form action="/submit" method="post">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username">
+
+         <!--creates username and box-->
+            <br>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password">
+         <!--creates password box and text-->    
+            <br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="example@email.com">
+             <!--section to add email-->
+            <br>
+
+            <label for="age">Age</label>
+            <input type="number" id="age" min="1" max="100">
+             <!--section to add age with a specific range-->
+            <br>
+
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+
+             <!--Area to select your gender-->
+            <br>
+
+            <label for="subscribe">Subscribe to newsletter</label>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <!--Subscription to emails?-->
+            <br>
+
+            <label for="country">Country</label>
+            <select  id="country" name="country">
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+            </select>
+            <!--place of origin-->
+            <br>
+
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments" rows="4" cols="50"></textarea>
+            <!--area for comments-->
+            <br>
+
+            <label for="file">Upload your photo</label>
+            <input type="file" id="file" name="file">
+            <!-- area to upload media-->
+            <br>
+
+            <input type="hidden" id="userid" name="userid" value="12345">
+            
+            <br>
+
+            <label for="volume">Volume</label>
+            <input type="range" id="volume" min="0" max="10">
+            <!--volume knob-->
+            <br>
+
+            <label for="birthdate">Birthdate:</label>
+            <input type="date" id="birthdate" name="birthdate">
+            <!--enter bday info-->
+            <br>
+
+            <label for="favcolor">Favorite Color</label> 
+            <input type="color" id="favcolor" name="favcolor">
+            <!--option to select favorite color-->
+            <br>
+
+            <input type="submit" value="submit">
+                    <!--Creates submit button-->
+            <input type="reset" value="reset"><!--Creates reset button-->
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy;Copyright 2024 Flores Productions | <a href="https://github.com/">GitHub</a> | <a href="https://www.manutd.com/">Official Website</a></p>
+    </footer>
+
+</body>
+
+</html>
