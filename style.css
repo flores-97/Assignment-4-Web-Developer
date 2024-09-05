@@ -20,8 +20,12 @@ h2{
 
 table{
     width: 100%;
-        vertical-align: inherit;
-        font-weight: bold;
-        text-align: center;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer{
+    position: relative;
 }
 
